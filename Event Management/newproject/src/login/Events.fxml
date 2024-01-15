@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="545.0" prefWidth="765.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login.EventsController">
+   <children>
+      <ImageView fitHeight="592.0" fitWidth="529.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@MainBG.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="BirthdayID" layoutX="539.0" layoutY="217.0" mnemonicParsing="false" onAction="#handleBirthdayAction" prefHeight="56.0" prefWidth="178.0" style="-fx-background-color: #ff5252;" text="Birthday">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.46">
+               <bumpInput>
+                  <InnerShadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <Button fx:id="WeddingID" layoutX="539.0" layoutY="317.0" mnemonicParsing="false" onAction="#handleWeddingAction" prefHeight="56.0" prefWidth="178.0" style="-fx-background-color: #ff5252;" text="Wedding">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.46">
+               <bumpInput>
+                  <InnerShadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <Button fx:id="EventsBackID" mnemonicParsing="false" onAction="#handleEventsBackAction" style="-fx-background-color: white;" text="🢀" textFill="#ff5252">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Text fill="#ff5252" layoutX="551.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EVENTS" wrappingWidth="153.6436767578125">
+         <font>
+            <Font name="Constantia Bold" size="40.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.46">
+               <bumpInput>
+                  <InnerShadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Text>
+   </children>
+</AnchorPane>

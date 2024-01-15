@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="545.0" prefWidth="765.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login.WeddingEventsController">
+   <children>
+      <ImageView fitHeight="584.0" fitWidth="528.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@MainBG.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="WeddingEventsBackID" layoutY="1.0" mnemonicParsing="false" onAction="#handleWeddingEventsBackAction" style="-fx-background-color: white;" text="🢀" textFill="#ff5252">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="WeddingProgramID" layoutX="528.0" layoutY="166.0" mnemonicParsing="false" onAction="#handleWeddingProgramAction" prefHeight="56.0" prefWidth="178.0" style="-fx-background-color: #ff5252;" text="Wedding Program">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.46">
+               <bumpInput>
+                  <InnerShadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <Button fx:id="HoludProgramID" layoutX="528.0" layoutY="265.0" mnemonicParsing="false" onAction="#handleHoludProgramAction" prefHeight="56.0" prefWidth="178.0" style="-fx-background-color: #ff5252;" text="Holud Program">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.46">
+               <bumpInput>
+                  <InnerShadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <Button fx:id="ReceptionProgramID" layoutX="528.0" layoutY="366.0" mnemonicParsing="false" onAction="#handleReceptionProgramAction" prefHeight="56.0" prefWidth="178.0" style="-fx-background-color: #ff5252;" text="Reception Program">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.46">
+               <bumpInput>
+                  <InnerShadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <Text fill="#ff5252" layoutX="473.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wedding Events">
+         <font>
+            <Font name="Constantia Bold" size="35.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.46">
+               <bumpInput>
+                  <InnerShadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Text>
+   </children>
+</AnchorPane>

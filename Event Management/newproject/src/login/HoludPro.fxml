@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.effect.Light.Distant?>
+
+<AnchorPane id="AnchorPane" prefHeight="545.0" prefWidth="765.0" style="-fx-background-color: black;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/15.0.1" fx:controller="login.HoludProController">
+   <children>
+      <Text fill="#ff5252" layoutX="332.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Venue">
+         <font>
+            <Font name="Constantia Bold" size="36.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.46">
+               <bumpInput>
+                  <InnerShadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Text>
+      <Text fill="#ff5252" layoutX="343.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Food">
+         <font>
+            <Font name="Constantia Bold" size="36.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.46">
+               <bumpInput>
+                  <InnerShadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Text>
+      <Text fill="#ff5252" layoutX="327.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Theme">
+         <font>
+            <Font name="Constantia Bold" size="36.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.46">
+               <bumpInput>
+                  <InnerShadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Text>
+      <Text fill="#ff5252" layoutX="275.0" layoutY="363.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Photography">
+         <font>
+            <Font name="Constantia Bold" size="36.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.46">
+               <bumpInput>
+                  <InnerShadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Text>
+      <Button fx:id="HoludProBackID" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleHoludProBackAction" style="-fx-background-color: black;" text="🢀" textFill="#ff5252">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="HoludProDoneID" layoutX="338.0" layoutY="446.0" mnemonicParsing="false" onAction="#handleHoludProDoneAction" style="-fx-background-color: #ff5252;" text="Button" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="holudcombo1" layoutX="229.0" layoutY="92.0" onAction="#handleHoludcombo1Action" prefHeight="45.0" prefWidth="314.0" style="-fx-background-color: white;" />
+      <ComboBox fx:id="holudcombo2" layoutX="229.0" layoutY="191.0" onAction="#handleHoludcombo2Action" prefHeight="45.0" prefWidth="314.0" style="-fx-background-color: white;" />
+      <ComboBox fx:id="holudcombo3" layoutX="229.0" layoutY="280.0" onAction="#handleHoludcombo3Action" prefHeight="45.0" prefWidth="314.0" style="-fx-background-color: white;" />
+      <ComboBox fx:id="holudcombo4" layoutX="229.0" layoutY="378.0" onAction="#handleHoludcombo4Action" prefHeight="45.0" prefWidth="314.0" style="-fx-background-color: white;" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="545.0" prefWidth="765.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login.MainUIController">
+   <children>
+      <Button fx:id="LogoutID" layoutX="540.0" layoutY="436.0" mnemonicParsing="false" onAction="#handleLogoutAction" prefHeight="56.0" prefWidth="178.0" style="-fx-background-color: #ff5252;" text="Logout">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.46">
+               <bumpInput>
+                  <InnerShadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <Button fx:id="InstructionsID" layoutX="540.0" layoutY="273.0" mnemonicParsing="false" onAction="#handleInstructionsAction" prefHeight="56.0" prefWidth="178.0" style="-fx-background-color: #ff5252;" text="Instructions">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.46">
+               <bumpInput>
+                  <InnerShadow blurType="TWO_PASS_BOX" radius="4.75" width="0.0" />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <Button fx:id="PaymentID" layoutX="540.0" layoutY="189.0" mnemonicParsing="false" onAction="#handlePaymentAction" prefHeight="56.0" prefWidth="178.0" style="-fx-background-color: #ff5252;" text="Payment">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.46">
+               <bumpInput>
+                  <InnerShadow choke="0.15" />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <Button fx:id="EventsID" layoutX="540.0" layoutY="107.0" mnemonicParsing="false" onAction="#handleEventsAction" prefHeight="56.0" prefWidth="178.0" style="-fx-background-color: #ff5252;" text="Events">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.46">
+               <bumpInput>
+                  <InnerShadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <Button fx:id="CreditID" layoutX="540.0" layoutY="354.0" mnemonicParsing="false" onAction="#handleCreditAction" prefHeight="56.0" prefWidth="178.0" style="-fx-background-color: #ff5252;" text="Credits">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.46">
+               <bumpInput>
+                  <InnerShadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <ImageView fx:id="ImageID" fitHeight="545.0" fitWidth="528.0" layoutX="-1.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@MainBG.jpg" />
+         </image>
+      </ImageView>
+      <Text fill="#ff5252" layoutX="123.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-background-color: #ff5252;" text="ELITE PLANNERS">
+         <font>
+            <Font name="Constantia Bold" size="45.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.46">
+               <bumpInput>
+                  <InnerShadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Text>
+   </children>
+</AnchorPane>

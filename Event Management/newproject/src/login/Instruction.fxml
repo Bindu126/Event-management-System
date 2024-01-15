@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="545.0" prefWidth="765.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login.InstructionController">
+   <children>
+      <TextArea fx:id="TextFiendInstructionID" editable="false" layoutX="72.0" layoutY="93.0" prefHeight="397.0" prefWidth="634.0" />
+      <Text fill="#ff5252" layoutX="286.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Instruction">
+         <font>
+            <Font name="Constantia Bold" size="36.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.46">
+               <bumpInput>
+                  <InnerShadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Text>
+      <Button fx:id="InstructionBackID" mnemonicParsing="false" onAction="#handleInstructionBackAction" style="-fx-background-color: black;" text="🢀" textFill="#ff5252">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
